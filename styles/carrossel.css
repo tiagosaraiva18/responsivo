@@ -1,0 +1,139 @@
+.carrossel__titulo{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--laranja);
+    text-align: center;
+    background: var(--branco);
+    padding: 1rem 0 .5rem 0;
+    text-transform: uppercase;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: .5rem 0;
+}
+
+.card{
+    background-color: var(--branco);
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1rem;
+    box-shadow: 0 5px 5px grey;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.descricao__titulo-livro{
+    color: var(--azul);
+    font-size: 18px;
+    font-weight: 700;
+    margin: .5rem 0;
+    line-height: 27px;
+}
+
+.descricao__texto{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 1rem;
+}
+
+.card__botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes{
+    display: flex;
+    align-items: center;
+}
+
+.botoes__item{
+    margin: 0 0 0 .6rem;
+}
+
+.botao__ancora{
+    background-color: var(--laranja);
+    padding: 1rem 2.2rem;
+    display: flex;
+    align-items: center;
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px){
+    .carrossel__titulo{
+        font-size: 26px;
+        margin: 2rem 0;
+    }
+
+    .swiper-pagination{
+        margin: 2rem 0 3rem 0;
+    }
+
+    .swiper{
+        width: 60%;
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display: block;
+        top: 60%;
+        background-color: var(--azul);
+        padding: .5rem 1rem;
+        border-radius: 100px;
+    }
+
+    .card{
+        width: 50%;
+        margin: 4rem auto 6rem auto;
+    }
+}
+
+@media screen and (min-width: 1728px){
+    .carrosel__container{
+        display: flex;
+        align-items: center;
+        margin: 0 20vh 3rem 20vh;
+    }
+
+    .swiper-pagination{
+        margin: 1rem 0;
+    }
+
+    .swiper{
+        width: 50%;
+    }
+
+    .descricao{
+        margin-right: 2rem;
+    }
+
+    .descricao__titulo{
+        font-size: 32px;
+    }
+
+    .descricao__texto{
+        font-size: 16px;
+    }
+
+    .card{
+        width: 40%;
+    }
+}
